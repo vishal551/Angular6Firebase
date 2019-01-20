@@ -15,8 +15,8 @@ export class EmployeeComponent implements OnInit {
 
   ngOnInit() {
     this.resetForm();
-  }
-  resetForm(form:NgForm){
+  } 
+  resetForm(form?:NgForm){
     if(form!=null)
     form.resetForm()
     this.service.formData={
@@ -28,6 +28,15 @@ export class EmployeeComponent implements OnInit {
         
       }
     }
-  
+    onSubmit(form:NgForm){
+      debugger;
+this.InsertRecord(form);
+    }
+    InsertRecord(form:NgForm){
+this.service.postEmployee(form.value).subscribe(res=>{
+  this.resetForm(form);
+})
+
+    }
 
 }
