@@ -25,4 +25,7 @@ export class EmployeeService {
       formData
     );
   }
+  deleteEmployee(id) {
+    return this.http.delete("http://localhost:3000/employee/" + id);
+  }
 }
