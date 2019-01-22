@@ -1,25 +1,32 @@
 {
-  "posts": [
+  "employee": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "FullName": "test 1",
+      "Position": "test 2",
+      "EMPCode": "test emp",
+      "Mobile": "test mobile"
+    },
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "FullName": "vis",
+      "Position": "vis test",
+      "EMPCode": "vis empcode",
+      "Mobile": "emp mobile",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "FullName": "ff",
+      "Position": "ff",
+      "EMPCode": "ff1999",
+      "Mobile": "ff"
+    },
+    {
+      "FullName": "vishal",
+      "Position": "software developer",
+      "EMPCode": "123",
+      "Mobile": "8866250964",
+      "id": 4
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  },
-  "employee": {
-    "FullName": "test 1",
-    "Position": "test 2",
-    "EMPCode": "test emp",
-    "Mobile": "test mobile"
-  }
+  ]
 }
